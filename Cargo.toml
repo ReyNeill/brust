@@ -1,0 +1,7 @@
+[package]
+name = "brust"
+version = "0.1.0"
+edition = "2024"
+description = "The Bible, compiled: the World English Bible as typed, static Rust data"
+license = "MIT"
+repository = "https://github.com/ReyNeill/brust"
