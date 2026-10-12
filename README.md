@@ -1,15 +1,12 @@
 # brust
 
-The Bible, compiled. Every verse of the World English Bible is built into a
+The Bible in Rust! Every verse of the World English Bible (eBible.org) is built into a
 Rust binary as typed, static data, and references are checked when your
-program compiles.
+program compiles. The build fails if a book is missing, or a chapter or verse number is skipped.
 
-```
-$ brust John 11:35
-John 11:35 Jesus wept.
-$ brust Psalm 23     # a chapter
-$ brust Jude         # a whole book
-```
+A release build takes about 3 seconds and produces a 5.2 MB binary!
+
+There is also a CLI. ```brust John 11:35``` prints a verse, ```brust Psalm 23``` a chaper, ```brust Jude``` a whole book.
 
 Install with `cargo install --git https://github.com/ReyNeill/brust`.
 
